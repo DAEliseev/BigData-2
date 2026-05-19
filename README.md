@@ -35,17 +35,22 @@ LIMIT 10;
 
 Выйдите: ```\q```
 
+---
+
 **Важно: После выполнения run.ps1 контейнеры автоматически останавливаются. Для проверки ClickHouse их нужно запустить заново.**
 
 ---
 
-### ClickHouse
+Запуск пайплайна:
 
-Для проверки ClickHouse используйте:
+```powershell
+cd путь\к\BigDataSpark-main
+.\run_reports.ps1
 ```
-docker compose up -d
-docker exec -it lab2-clickhouse clickhouse-client --user lab --password lab
-```
+
+---
+
+### ClickHouse
 
 ```sql
 SHOW TABLES FROM labdb;
