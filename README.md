@@ -35,6 +35,12 @@ LIMIT 10;
 
 Выйдите: ```\q```
 
+Для проверки ClickHouse используйте:
+```
+docker compose up -d
+docker exec -it lab2-clickhouse clickhouse-client --user lab --password lab
+```
+
 ---
 
 ### ClickHouse
@@ -66,3 +72,5 @@ WHERE database = 'labdb'
   )
 ORDER BY name;
 ```
+
+Выйдите: ```exit```
