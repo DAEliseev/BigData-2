@@ -33,6 +33,8 @@ JOIN dw.dim_product p ON f.product_key = p.product_key
 LIMIT 10;
 ```
 
+Выйдите: ```\q```
+
 ---
 
 ### ClickHouse
